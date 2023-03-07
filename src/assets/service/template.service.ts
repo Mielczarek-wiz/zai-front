@@ -9,7 +9,7 @@ import {Template} from "../models/template";
 })
 export class TemplateService {
 
-  private templateUrl = 'https://zai-backend-production.up.railway.app/pages/main/templates';
+  private templateUrl = 'https://zai-backend-production.up.railway.app/templates';
 
   httpOptions = {
     withCredentials: true
