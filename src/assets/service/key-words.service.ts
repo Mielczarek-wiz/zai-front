@@ -9,7 +9,7 @@ import { ErrorHandlerService } from './error-handler.service';
 })
 export class KeyWordsService {
 
-  private keyWordsUrl = 'http://localhost:8080/keyWords';
+  private keyWordsUrl = 'https://zai-backend-production.up.railway.app/pages/main/keyWords';
 
   httpOptions = {
     withCredentials: true
