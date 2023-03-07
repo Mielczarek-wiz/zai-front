@@ -10,7 +10,7 @@ import {ErrorHandlerService} from "./error-handler.service";
 })
 export class UserService {
 
-  private userUrl = 'http://localhost:8080/users';
+  private userUrl = 'https://zai-backend-production.up.railway.app/pages/main/users';
 
   public loggedUser!: User | null;
 
