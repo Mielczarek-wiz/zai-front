@@ -9,7 +9,7 @@ import {ErrorHandlerService} from "./error-handler.service";
 })
 export class UniversityService {
 
-  private universityUrl = 'http://localhost:8080/universities';
+  private universityUrl = 'https://zai-backend-production.up.railway.app/pages/main/universities';
 
   httpOptions = {
     withCredentials: true
