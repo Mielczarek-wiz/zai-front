@@ -50,12 +50,12 @@ export class UserService {
   }
 
   login(user: { username: string, password: string }, defaultErrorHandling: boolean = true): Observable<any> {
-    return this.http.post<any>('https://main--frolicking-swan-97ee4a.netlify.app:8080/login', user, this.httpOptions)
+    return this.http.post<any>('http://localhost:8080/login', user, this.httpOptions)
       .pipe(this.errorHandler.getErrorHandling(defaultErrorHandling));
   }
 
   logout(defaultErrorHandling: boolean = true): Observable<any> {
-    return this.http.get<any>('https://main--frolicking-swan-97ee4a.netlify.app:8080/logout', this.httpOptions)
+    return this.http.get<any>('http://localhost:8080/logout', this.httpOptions)
       .pipe(this.errorHandler.getErrorHandling(defaultErrorHandling));
   }
 
