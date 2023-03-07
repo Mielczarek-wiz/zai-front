@@ -50,12 +50,12 @@ export class UserService {
   }
 
   login(user: { username: string, password: string }, defaultErrorHandling: boolean = true): Observable<any> {
-    return this.http.post<any>('https://zai-backend-production.up.railway.app/login', user, this.httpOptions)
+    return this.http.post<any>('https://main--frolicking-swan-97ee4a.netlify.app/login', user, this.httpOptions)
       .pipe(this.errorHandler.getErrorHandling(defaultErrorHandling));
   }
 
   logout(defaultErrorHandling: boolean = true): Observable<any> {
-    return this.http.get<any>('https://zai-backend-production.up.railway.app/logout', this.httpOptions)
+    return this.http.get<any>('https://main--frolicking-swan-97ee4a.netlify.app/logout', this.httpOptions)
       .pipe(this.errorHandler.getErrorHandling(defaultErrorHandling));
   }
 
