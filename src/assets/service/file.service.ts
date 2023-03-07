@@ -8,7 +8,7 @@ import {FileResource} from "../models/file";
   providedIn: 'root'
 })
 export class FileService {
-  private server = 'http://localhost:8080/file';
+  private server = 'https://zai-backend-production.up.railway.app/pages/main/file';
 
   constructor(private http: HttpClient, private errorHandler: ErrorHandlerService) {
   }
