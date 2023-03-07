@@ -9,7 +9,7 @@ import {Backup} from "../models/backup";
 })
 export class BackupService {
 
-  private backupUrl = 'http://localhost:8080/backups';
+  private backupUrl = 'https://zai-backend-production.up.railway.app/pages/main/backups';
 
   httpOptions = {
     withCredentials: true
