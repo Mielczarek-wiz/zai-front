@@ -9,7 +9,7 @@ import {ErrorHandlerService} from "./error-handler.service";
 })
 export class PageService {
 
-  private pageUrl = 'http://localhost:8080/pages';
+  private pageUrl = 'https://zai-backend-production.up.railway.app/pages/main/pages';
 
   sidenavToggled = new EventEmitter();
 
